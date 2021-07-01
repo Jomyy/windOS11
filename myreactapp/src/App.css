@@ -1,0 +1,191 @@
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.menuBar{
+  top: 0x;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  backdrop-filter: blur(1000px);
+}
+
+.dd-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+ 
+  text-align: left;
+}
+.tryEdge{
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  background: white;
+  right:0px;
+  bottom: 200px;
+  color: black;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.692));
+}
+.tryEdge img{
+  width: 70px;
+}
+.menuBar img{
+  margin-left: 18px;
+  margin-right: 7px;
+  
+}
+.menuBar .weather{
+  position: absolute;
+  right: 10px;
+  filter: blur(1px);
+}
+.dd-header{
+  
+  text-align: center;
+  margin-top: 2px;
+  padding-left: 10px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  
+ 
+}
+.dd-header-title{
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 15px;
+  
+  
+}
+.dd-header-title:hover {
+  background: rgba(255, 255, 255, 0.363);
+  border-radius: 5px;
+}
+[draggable=true] {
+  cursor: move;
+  position: absolute;
+}
+.handle{
+  width: 700px;
+  height: 70px;
+  background: #f8f7f5;
+  color:#505050;
+  border-radius: 14px 10px 0 0;
+  
+}
+.mainContentFinder{
+  height: 330px;
+  width: 580px;
+  background: #ffffff;
+  position: absolute;
+  left: 120px;
+  border-radius: 0px 0px 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+  
+  
+}
+.mainContentFinder div{
+  height: 100px;
+  width: 80px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.mainContentFinder div img{
+  width: 70px;
+}
+.sideBar{
+  height: 400px;
+  width: 120px;
+  background: #d3d3d39f;
+  backdrop-filter: blur(10px);
+  border-radius: 10px 0 0 10px;
+  position:absolute;
+  top: 0px;
+
+}
+.resizable {
+  overflow: scroll;
+  resize: both;
+  max-width: 300px;
+  max-height: 460px;
+  border: 1px solid black;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: skyblue;
+}
+
+
+.acrylic {
+  
+  position: relative;
+  background: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(1000px);
+  backdrop-filter: blur(1000px);
+  
+}
+.clock-menuBar{
+  position: absolute;
+  right: 160px;
+}
+body {
+  background: url("https://i.redd.it/2xj5atq3q7f61.png") center/cover;
+  background-attachment: fixed;
+  margin: 0;
+  font: 1em/1.4 Sans-serif;
+  color: #fff;
+}
+.information{
+  -webkit-user-drag: none;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.dock{
+  position: fixed;
+  bottom: 10px;
+  border: rgba(255, 255, 255, 0.226) solid 1px;
+  border-radius: 20px;
+  background: rgba(182, 182, 182, 0.2);
+  backdrop-filter: blur(1000px);
+  height: 70px;
+  width: 70%;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.692));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  
+}
+.dock img{
+  margin-left: 20px;
+  height: 55px;
+  width: 55px;
+}
+
+.dragSize{
+  height: 40px;
+  width: 0px;
+  border: rgba(255, 255, 255, 0.226) solid 1px;
+  align-self: flex-end;
+  margin-right: 200px;
+  cursor: s-resize;
+  
+}
